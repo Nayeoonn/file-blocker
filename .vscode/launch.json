@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-FileblockerApplication<fileblocker>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.nayeon.fileblocker.FileblockerApplication",
+            "projectName": "fileblocker",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

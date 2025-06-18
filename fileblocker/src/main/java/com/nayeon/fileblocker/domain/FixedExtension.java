@@ -37,4 +37,9 @@ public class FixedExtension {
     public void setChecked(boolean checked) {
         this.checked = checked;
     }
+
+    // 체크 여부를 반전시킴 (true → false, false → true)
+    public void toggleChecked() {
+        this.checked = !this.checked;
+    }
 }

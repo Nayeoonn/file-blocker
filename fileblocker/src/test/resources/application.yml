@@ -1,0 +1,5 @@
+logging:
+  level:
+    com.nayeon.fileblocker: DEBUG  # 패키지 전체 로그 보이게
+  pattern:
+    console: "%d{HH:mm:ss} [%level] %logger{36} - %msg%n"    

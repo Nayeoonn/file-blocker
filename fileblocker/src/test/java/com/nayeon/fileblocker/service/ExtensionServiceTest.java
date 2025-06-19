@@ -40,7 +40,7 @@ public class ExtensionServiceTest {
     @Test
     void testGetAllBlockedExtensions() {
         // 추가한 확장자 전체 조회
-        List<BlockedExtension> blockedExtensions = extensionService.getAllBlockedExtension();
+        List<BlockedExtension> blockedExtensions = extensionService.getAllBlockedExtensions();
 
         assertThat(blockedExtensions).isNotNull();
     }

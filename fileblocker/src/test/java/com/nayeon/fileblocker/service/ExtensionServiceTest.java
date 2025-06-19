@@ -38,6 +38,13 @@ public class ExtensionServiceTest {
     }
 
     @Test
+    void testGetAllBlockedExtensions() {
+        // 추가한 확장자 전체 조회
+        List<BlockedExtension> blockedExtensions = extensionService.getAllBlockedExtension();
+
+        assertThat(blockedExtensions).isNotNull();
+    }
+    @Test
     void testToggleFixedExtension() {
         // 테스트용 고정 확장자 저장
         FixedExtension ext = new FixedExtension("jpg", false);

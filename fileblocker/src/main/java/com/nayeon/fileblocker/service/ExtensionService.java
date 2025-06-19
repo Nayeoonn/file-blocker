@@ -29,6 +29,11 @@ public class ExtensionService {
         return fixedExtensionRepository.findAll();
     }
 
+    public List<BlockedExtension> getAllBlockedExtensions(){
+        log.info("사용자가 추한 확장자 전체 조회 요청");
+        return blockedExtensionRepository.findAll();
+    }
+
 
     // 고정 확장자 체크 상태 토글 (ON ↔ OFF)
     // 해당 확장자가 없을 경우

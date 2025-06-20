@@ -19,6 +19,7 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 16px;
+    margin-bottom: 15px;
 }
 
 /* 왼쪽 라벨 고정 너비 */

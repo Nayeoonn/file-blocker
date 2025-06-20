@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>파일 차단 확장자</title>
+</head>
+<body>
+    <h2 class="section-title">◎ 파일 차단 확장자</h2>
+    <p>파일확장자에 따라 특정 형식의 파일을 첨부하거나 전송하지 못하도록 제한</p>
+
+    <!-- 고정 확장자 -->
+    <div class="section row">
+        <label class="form-label">고정 확장자</label>
+        <div class="checkbox-group">
+        <label><input type="checkbox"> bat</label>
+        <label><input type="checkbox"> cmd</label>
+        <label><input type="checkbox"> com</label>
+        <label><input type="checkbox"> cpl</label>
+        <label><input type="checkbox"> exe</label>
+        <label><input type="checkbox"> scr</label>
+        <label><input type="checkbox"> js</label>
+        </div>
+    </div>
+
+    <!-- 커스텀 확장자 입력 -->
+    <div class="section row">
+        <label class="form-label">커스텀 확장자</label>
+        <div class="custom-input">
+            <input 
+                type="text" 
+                id="custom-extension-input" 
+                class="input-field"
+                placeholder="확장자 입력" 
+                maxlength="20" 
+            />
+            <button id="add-extension-btn" class="add-button">+추가</button>
+        </div>
+    </div>
+
+    <!-- 차단 목록 -->
+    <div class="section row">
+        <label class="form-label">차단 목록</label>
+        <div class="block-box">
+            <p class="cnt-display"><span id="custom-count">3</span>/200</p>
+            <div id="custom-extension-list" class="tag-list">
+                <span class="tag">sh <button>×</button></span>
+                <span class="tag">ju <button>×</button></span>
+                <span class="tag">ch <button>×</button></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JS
+    </script>
+</body>
+</html>

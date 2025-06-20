@@ -1,0 +1,94 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+}
+
+.section {
+    
+}
+
+.section-title {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px 0;
+    font-size: 1.5em;
+}
+
+/* 1열 정렬을 위한 공통 행 구조 */
+.row {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+/* 왼쪽 라벨 고정 너비 */
+.form-label {
+    width: 100px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+/* 고정 확장자 */
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 6px;
+}
+
+/* 커스텀 확장자 입력 */
+.custom-input {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.input-field {
+    min-width: 300px;
+    padding: 6px;
+}
+
+.add-button {
+    padding: 6px 12px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+/* 차단된 확장자 박스 */
+.block-box {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    width: 400px;
+    height: 300px;
+    overflow-y: auto; /* 넘치면 스크롤 */
+}
+
+.cnt-display {
+    margin: 0 0 8px 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* 확장자 태그들 */
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    background: #eee;
+    border-radius: 10px;
+}
+
+.tag button {
+    margin-left: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}

@@ -30,7 +30,7 @@ public class ExtensionService {
     }
 
     public List<BlockedExtension> getAllBlockedExtensions(){
-        log.info("사용자가 추한 확장자 전체 조회 요청");
+        log.info("사용자가 추가한 확장자 전체 조회 요청");
         return blockedExtensionRepository.findAll();
     }
 
@@ -50,11 +50,11 @@ public class ExtensionService {
     }
 
 
-    // 사용자 차단 확장자 추가
+    // 사용자가 차단할 확장자 추가
     // 이미 등록된 확장자인 경우
     @Transactional
     public void addBlockedExtension(String extension) {
-        log.info("차단 확장자 등록 시도: {}", extension);
+        log.info("커스텀 확장자 등록 시도: {}", extension);
 
         if (blockedExtensionRepository.findByExtension(extension).isPresent()) {
             log.warn("중복 확장자 등록 시도: {}", extension);
@@ -63,14 +63,14 @@ public class ExtensionService {
 
         BlockedExtension blockedExtension = new BlockedExtension(extension);
         blockedExtensionRepository.save(blockedExtension);
-        log.info("차단 확장자 등록 완료: {}", extension);
+        log.info("커스텀 확장자 등록 완료: {}", extension);
     }
 
 
-    // 사용자 차단 확장자 삭제
+    // 사용자 커스텀 확장자 삭제
     @Transactional
     public void removeBlockedExtension(Long id) { 
-        log.info("차단 확장자 삭제 시도 - ID: {}", id);
+        log.info("커스텀 확장자 삭제 시도 - ID: {}", id);
 
         blockedExtensionRepository.deleteById(id);
         log.info("삭제 완료 - ID: {}", id);

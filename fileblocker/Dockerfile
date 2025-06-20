@@ -2,7 +2,7 @@
 FROM gradle:8.4-jdk17 AS build
 COPY --chown=gradle:gradle . /app
 WORKDIR /app
-RUN ./gradlew bootJar
+RUN gradle bootJar --no-daemon
 
 # 2단계: 실행
 FROM openjdk:17-alpine

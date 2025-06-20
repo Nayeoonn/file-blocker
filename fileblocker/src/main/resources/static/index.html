@@ -159,6 +159,14 @@
         .catch(err => alert(err.message));
     });
 
+    // 엔터키로 이벤트 처리
+    document.getElementById('custom-extension-input').addEventListener('keydown', (e) => {
+        if(e.key === 'Enter'){
+            e.preventDefault();
+            document.getElementById('add-extension-btn').click();
+        }
+    })
+    
     // 사용자 태그 추가 (DOM 조작만)
     function addExtensionTag(extension) {
         const tagList = document.getElementById('custom-extension-list');
